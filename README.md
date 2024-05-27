@@ -31,10 +31,10 @@ Morover some function have the parameter ``representation`` that allows to set a
 They can easily be changed manually, especially with respect to the ``variant`` parameter to represent the leaf nodes. (No guarantee that they will work)
 
 ## Things to be fixed
-- I'm not sure that anything works set aside for some small examples. I need to conduct more tests with different parameters.
+- I'm not sure if anything works set aside for some small examples. I need to conduct more tests with different parameters.
 - I'm not sure if some parameters may cause each other problems (not all combinations have been tried).
 - Possibility to add argument number as edge feature (but maybe not very easy to code given the current structure).
-- Code for edge features now rely on the assumption that each node has only one parent. This is not true for many representation. Problems arise especially with the combination of ``cumulative`` and the presence of an edge for argument number (also a problem in theory, what value should be assigned to that fictitious edge in the cumulative setting?).
+- Code for edge features now rely on the assumption that each node has only one parent. This is not true for many representations. Problems arise especially with the combination of ``cumulative`` and the presence of an edge for argument number (also a problem in theory, what value should be assigned to that fictitious edge in the cumulative setting?).
 - The edge feature matrix is a list[list[list]]. I have to find a more pytorch-ic way to store it. It is also a sparse matrix (as the adjacency one).
 - My code is very ugly.
 
