@@ -9,7 +9,8 @@ To construct the graph I implemented four parameters: ``variant``, ``shared_var`
   - *threshold-sign* leaf node ----> placeholder-threshold/sign-variable.
   - *all-in-var* leaf node ----> placeholder-variable.
 
-![Leaf_representations](variants_white.png)
+![Leaf_representations](variants_white.png#gh-dark-mode-only)
+![Leaf_representations](variants_black.png#gh-light-mode-only)
 - ``shared_var`` is a Boolean parameter.
   - if *True* we have a single node for each variable index (e.g. x_1) as in the original code.
   - if *False* we have a tree-like structure with each instance of the variable as a separate node (e.g. x_1(8), x_1(11)).
